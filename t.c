@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    printf("H");
-    printf("J");
-}
+    int A = 1;
+    float B = 2.1;
+    printf("%d\n", A);
+    printf("%f\n", B);
+} 
