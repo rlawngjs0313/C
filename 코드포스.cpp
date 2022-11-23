@@ -7,19 +7,21 @@ int main(){
     int t;
     cin >> t;
     for (int _ = 0; _ < t; _++){
-        int n;
+        int n, data;
         cin >> n;
-        deque<int> L1(n);
+        deque<int> L1;
 
         for (int i = 0; i < n; i++){
-            cin >> L1[i];
+            cin >> data;
+            L1.push_back(data);
         }
 
-        deque<int>::iterator iter;
-        for (iter = L1.begin(); iter != L1.end(); iter++){
-            deque<int> temp(L1);
-            temp.erase(iter);
-            cout << *iter - *max_element(temp.begin(), temp.end()) << " ";
+        int cnt = 0;
+        for (auto i:L1){
+            deque<int> L2(L1);
+            L2.erase(L2.begin()+cnt);
+            cout << i - *max_element(L2.begin(), L2.end()) << " ";
+            cnt++;
         }
     }
 }
