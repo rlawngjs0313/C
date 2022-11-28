@@ -1,27 +1,17 @@
 #include <iostream>
 #include <algorithm>
-#include <deque>
 using namespace std;
 
 int main(){
     int t;
     cin >> t;
     for (int _ = 0; _ < t; _++){
-        int n, data;
+        int n, temp;
         cin >> n;
-        deque<int> L1;
+        string S1;
+        cin >> S1;
 
-        for (int i = 0; i < n; i++){
-            cin >> data;
-            L1.push_back(data);
-        }
+        for (int i = 1; )
 
-        int cnt = 0;
-        for (auto i:L1){
-            deque<int> L2(L1);
-            L2.erase(L2.begin()+cnt);
-            cout << i - *max_element(L2.begin(), L2.end()) << " ";
-            cnt++;
-        }
     }
 }
