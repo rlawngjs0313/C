@@ -63,6 +63,7 @@
     "variant": "cpp",
     "vector": "cpp",
     "algorithm": "cpp",
-    "deque": "cpp"
+    "deque": "cpp",
+    "stdbool.h": "c"
   }
 }
