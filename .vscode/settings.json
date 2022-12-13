@@ -64,6 +64,9 @@
     "vector": "cpp",
     "algorithm": "cpp",
     "deque": "cpp",
-    "stdbool.h": "c"
-  }
+    "stdbool.h": "c",
+    "fstream": "cpp",
+    "stack": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
